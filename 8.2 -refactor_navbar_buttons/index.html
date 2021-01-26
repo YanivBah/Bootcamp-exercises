@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/c1514f61dc.js" crossorigin="anonymous"></script>
+  <title>7.1-float_layout</title>
+  <style>
+    * {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      color: #3b4252;
+      box-sizing: border-box;
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    #header {
+      width: 50%;
+      margin: 10px auto;
+      border-radius: 10px;
+      border: 1px solid rgba(76, 86, 106, 0.2);
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+      height: 40px;
+      background-color: rgba(76, 86, 106, 0.15);
+      text-align: center;
+    }
+    #header li {
+      list-style: none;
+      display: inline;
+    }
+    #header li a {
+      display: inline-block;
+      padding: 8px;
+      font-size: 20px;
+      margin: 0 auto;
+      text-decoration: none;
+      margin-right: 40px;
+    }
+    #header li a:hover {
+      background-color: rgba(76, 86, 106, 0.45);
+      color: #fafafa;
+    }
+    #side {
+      margin-top: 80px;
+      width: 40%;
+      height: 300px;
+      float: left;
+    }
+    #side img {
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: -10px 10px 12px -2px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    #main {
+      max-width: 55%;
+      height: 300px;
+      float: right;
+    }
+    .clr {
+      clear: both;
+    }
+    .heading-primary {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 35px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5px;
+  }
+  .heading-secondary {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .info {
+    padding: 20px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.03);
+    float: right;
+    font-size: 16px;
+  }
+  .headers {
+    text-align: center;
+  }
+  .box {
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 5px rgba(0, 0, 0, 0.9);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 130px;
+    width: 300px;
+    margin-top: 30px;
+  }
+  .boxleft {
+    width: 40%;
+    float: left;
+  }
+  .boxleft li {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .boxright {
+    width: 40%;
+    float: right;
+  }
+  .list-header {
+    font-weight: 300;
+    text-decoration: underline;
+    font-size: 18px;
+  }
+  .btn {
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 14px 0px 150px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: rgba(76, 86, 106, 0.15);
+    font-weight: 100;
+    width: 120px;
+  }
+  .btn:hover {
+    background-color: rgba(76, 86, 106, 0.45);
+    color: white;
+  }
+  .btn:hover span {
+    color: white;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="header" class="style">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+    <div id="side" class="style">
+      <div class="profile">
+        <img src="imgs/me.png" alt="Picture of myself">
+      </div>
+    </div>
+    <div id="main" class="style">
+      <div class="headers">
+        <h1 class="heading-primary">My name is Yaniv Bahalker</h1>
+        <h2 class="heading-secondary">Soon <sub class="small">(Just 6 months...)</sub> to be Fullstack Developer</h2>
+      </div>
+      <div class="info">
+        <p>I'm 23. I found out this last year that programming really fascinating for me.
+          <br>
+          I love to learn new things, but (and this is a big one) only stuff that I found interesting.
+        </p>
+      </div>
+      <div class="clr"></div>
+      <div class="boxleft">
+          <div class="box hobbies">
+            <span class="list-header">My hobbies are: </span>
+            <p>
+              <ul>
+                <li><i class="fas fa-camera"></i>  - Photographing.</li>
+                <li><i class="fas fa-hiking"></i>  - Outdoor and hiking. </li>
+                <li><i class="fas fa-music"></i>  - Music is like a coffee for me. </li>
+              </ul>
+            </p>
+          </div>
+      </div>
+      <div class="boxright">
+        <div class="box social">
+          <span class="list-header">Social links: </span>
+          <p>
+            <a href="https://www.facebook.com/yaniv.bahalker/" class="fab fa-facebook-square btn" target="_blank">&nbsp;&nbsp;<span>Facebook</span></a>
+            <br>
+            <a href="https://github.com/YanivBah" class="fab fa-github btn" target="_blank">&nbsp;&nbsp;<span>GitHub</span></a>
+            <br>
+            <a href="ttps://yanivb.smugmug.com/" class="far fa-images btn" target="_blank">&nbsp;&nbsp;<span>Portfolio</span></a>
+          </p>
+        </div>
+      </div>
+    </div>
+      </div>
+</body>
+</html>

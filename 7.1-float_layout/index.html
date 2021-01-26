@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7.1-float_layout</title>
+  <style>
+    .container {
+      max-width: 980px;
+      margin: auto;
+    }
+    .style {
+      border: 1px solid black;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 30px;
+    }
+    #header {
+      width: 100%;
+      height: 100px;
+      background-color: orange;
+    }
+    #side {
+      width: 30%;
+      height: 300px;
+      background-color: green;
+      float: left;
+    }
+    #main {
+      width: 65%;
+      height: 300px;
+      float: right;
+      background-color: purple;
+    }
+    .clr {
+      clear: both;
+    }
+    #footer {
+      width: 100%;
+      height: 100px;
+      float: right;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="header" class="style">
+      <span>Header</span>
+    </div>
+    <div id="side" class="style">
+      <span>Side</span>
+    </div>
+    <div id="main" class="style">
+      <span>Main</span>
+    </div>
+    <div class="clr"></div>
+    <div id="footer" class="style">
+      <span>Footer</span>
+    </div>
+  </div>
+</body>
+</html>
