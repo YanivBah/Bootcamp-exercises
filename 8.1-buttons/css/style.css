@@ -1,5 +1,5 @@
 .main {
-  background-color: #34475E;
+  background-color: #34475e;
   max-width: 980px;
   height: 680px;
   margin: 0 auto;
@@ -21,54 +21,54 @@
   margin-right: 0px;
 }
 .btn1 {
-  background-color: #12FB78;
+  background-color: #12fb78;
   padding: 15px 50px;
 }
 .btn1:hover {
   background-color: #0bcc5f;
 }
 .btn2 {
-  background-color: #E80C24;
+  background-color: #e80c24;
   padding: 10px 40px;
 }
 .btn2:hover {
-  background-color: #C40A20;
+  background-color: #c40a20;
 }
 
 .btn3 {
-  background-color: #1A96D4;
+  background-color: #1a96d4;
   padding: 6px 20px;
 }
 .btn3:hover {
-  background-color: #167FB4;
+  background-color: #167fb4;
 }
 .btn-round {
   margin-right: 100px;
   color: #fff;
-  text-decoration: 0;
+  text-decoration: none;
   border-radius: 30px;
 }
 .btn4 {
-  background-color: #E87506;
+  background-color: #e87506;
   padding: 15px 50px;
 }
 .btn4:hover {
-  background-color: #C46305;
+  background-color: #c46305;
 }
 .btn5 {
-  background-color:#EBD50B;
+  background-color: #ebd50b;
   padding: 10px 40px;
 }
 .btn5:hover {
-  background-color: #CCB909;
+  background-color: #ccb909;
 }
 
 .btn6 {
-  background-color: #7D8D8A;
+  background-color: #7d8d8a;
   padding: 6px 20px;
 }
 .btn6:hover {
-  background-color: #6F7D7A;
+  background-color: #6f7d7a;
 }
 .btn-flat-ghost {
   margin-right: 100px;
@@ -76,26 +76,26 @@
   text-decoration: 0;
 }
 .btn7 {
-  border: 3px solid #10FC7A;
+  border: 3px solid #10fc7a;
   padding: 15px 50px;
 }
 .btn7:hover {
-  background-color: #10FC7A;
+  background-color: #10fc7a;
 }
 .btn8 {
-  border: 3px solid  #E80E25;
+  border: 3px solid #e80e25;
   padding: 10px 40px;
 }
 .btn8:hover {
-  background-color: #E80E25;
+  background-color: #e80e25;
 }
 
 .btn9 {
-  border: 3px solid   #1A96D4;
+  border: 3px solid #1a96d4;
   padding: 6px 20px;
 }
 .btn9:hover {
-  background-color: #1A96D4;
+  background-color: #1a96d4;
 }
 .btn-round-ghost {
   margin-right: 100px;
@@ -104,26 +104,26 @@
   border-radius: 30px;
 }
 .btn10 {
-  border: 3px solid #E87506;
+  border: 3px solid #e87506;
   padding: 15px 50px;
 }
 .btn10:hover {
-  background-color: #E87506;
+  background-color: #e87506;
 }
 .btn11 {
-  border: 3px solid  #EBD50B;
+  border: 3px solid #ebd50b;
   padding: 10px 40px;
 }
 .btn11:hover {
-  background-color: #EBD50B;
+  background-color: #ebd50b;
 }
 
 .btn12 {
-  border: 3px solid   #7D8D8C;
+  border: 3px solid #7d8d8c;
   padding: 6px 20px;
 }
 .btn12:hover {
-  background-color: #7D8D8C;
+  background-color: #7d8d8c;
 }
 h2 {
   padding: 0;
