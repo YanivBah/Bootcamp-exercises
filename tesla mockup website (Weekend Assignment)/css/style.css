@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gotham";
+  font-weight: 300;
+}
+/* Utilites */
+.clr {
+  clear: both;
+}
+
+.btn-white {
+  border-radius: 20px;
+  border: 3px solid #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px;
+}
+.btn-white:hover {
+  background-color: #fff;
+  font-weight: 300;
+  color: #000;
+}
+.btn-dark {
+  border-radius: 20px;
+  border: 3px solid #171a20;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 12px;
+  display: inline;
+  margin-top: 3px;
+  font-weight: 300;
+}
+.btn-dark:hover {
+  background-color: #171a20;
+  font-weight: 400;
+  color: #fff;
+}
+.circlebtn i {
+  margin-right: 10px;
+  font-size: 30px;
+  color: #171a20;
+}
+.circlebtn {
+  margin: 0 20px;
+}
+.circlebtn:hover {
+  color: orangered;
+}
+
+/* Text */
+.heading-primary {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 400;
+}
+.heading-features {
+  color: #fff;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+/* Navbar */
+#nav {
+  min-width: 100%;
+  height: 30px;
+  position: absolute;
+  margin-top: 15px;
+  font-weight: 400;
+}
+.nav-links {
+  text-align: right;
+}
+.nav-links ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+.nav-links ul li {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.nav-links ul li a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+.sidelinks2 {
+  float: right;
+}
+.sidelinks:first-child {
+  margin-left: calc(100vw / 4.5);
+}
+#nav img {
+  float: left;
+}
+
+/* Showcase 1 */
+.showcase1 {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/section1.jpg) no-repeat center center/cover;
+  padding-top: 75px;
+}
+.showcase1-features {
+  max-width: 800px;
+  margin: 34% auto auto 30%;
+}
+.showcase1-features .box {
+  margin: 0 20px;
+  float: left;
+}
+.showcase1-features .box p {
+  font-size: 12px;
+  margin-top: 7px;
+  color: #fff;
+}
+.sperator {
+  font-size: 40px;
+  color: #fff;
+}
+
+/* Showcase 2 */
+.showcase2 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+.container {
+  margin: auto;
+}
+.sideboxsmall {
+  float: left;
+  width: 21%;
+  min-height: 100vh;
+  background-color: #fff;
+  display: block;
+}
+.textbox {
+  padding: 40px;
+}
+.textbox h2 {
+  margin: 10px 0 15px 0;
+}
+.textbox .longtext {
+  color: #64666a;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.starbox {
+  background-color: #eeeeee;
+  border-radius: 25px;
+  margin: 0 10%;
+  padding: 20px 20px;
+  color: #171a20;
+  height: 270px;
+}
+.starbox h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+.starbox .left {
+  width: 48%;
+  display: block;
+  float: left;
+}
+.starbox .right {
+  width: 48%;
+  float: left;
+  text-align: right;
+  display: block;
+  font-size: 18px;
+}
+.starbox .right p {
+  margin-bottom: 15px;
+}
+.starbox .categorytext {
+  margin-bottom: 10px;
+  color: #393c41;
+}
+.starbox .categorytext p {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+}
+.starbox .categorytext span {
+  font-size: 9px;
+  display: block;
+}
+.buttons {
+  width: 100%;
+  margin: 260px 10% 0 10%;
+}
+.buttons a {
+  text-decoration: none;
+  color: #171a20;
+}
+
+.sideboxbig {
+  width: 70%;
+  height: 100%;
+  min-height: 100vh;
+  float: left;
+  background: url(../img/section2.png) no-repeat right center/cover;
+}
