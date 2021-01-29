@@ -63,6 +63,17 @@
   border-left: 1px solid #fff;
   margin: 0 30px -10px 30px;
 }
+.feature-box-vl {
+  color: #171a20;
+  text-align: left;
+  display: block;
+}
+.hr {
+  display: block;
+  width: 70px;
+  border-top: 1px solid #171a20;
+  margin: 30px 0;
+}
 .container {
   display: block;
   text-align: center;
@@ -217,7 +228,6 @@ nav {
 }
 .section3topbox {
   height: 74vh;
-  min-width: 100vw;
   background: url(../img/section3.jfif) no-repeat center center/cover;
 }
 .section3topbox .feature-box {
@@ -228,17 +238,142 @@ nav {
 }
 .section3bottombox {
   height: 26vh;
-  min-width: 100vw;
+  padding: 50px 25%;
+}
+#section3 .lefttext {
+  float: left;
+  width: 34%;
+}
+#section3 .righttext {
+  float: left;
+  width: 60%;
 }
 
 /* Section 4 - All Wheel Drive */
-
+#section4 {
+  width: 100%;
+  min-height: 100vh;
+}
+.section4topbox {
+  height: 74vh;
+  background: url(../img/section4.jfif) no-repeat center center/cover;
+}
+.section4bottombox {
+  height: 26vh;
+  padding: 50px 25%;
+}
+.section4topbox .feature-box {
+  text-align: left;
+}
+.section4topbox .container {
+  padding-top: 30%;
+}
+#section4 .lefttext {
+  float: left;
+  width: 34%;
+}
+#section4 .righttext {
+  float: left;
+  width: 60%;
+}
+#section4 .btn-dark {
+  padding: 10px 30px;
+}
 /* Section 5 - Range */
+#section5 {
+  width: 100%;
+  min-height: 100vh;
+}
+.section5leftbox {
+  float: left;
+  width: 78%;
+  height: 100vh;
+  background: url(../img/section5.jfif) no-repeat center center/cover;
+}
+.section5rightbox {
+  background-color: #fff;
+  padding: 30px 40px;
+  float: left;
+  width: 22%;
+  height: 100vh;
+}
+.img-map {
+  margin-top: 20px;
+}
+.section5rightbox .margin-top-big {
+  margin-top: 100px;
+}
 
 /* Section 6 - Autopilot */
-
+#section6 {
+  width: 100%;
+  min-height: 100vh;
+}
+.section6topbox {
+  height: 74vh;
+  position: relative;
+}
+.fullscreen-bg {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.fullscreen-bg video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+.section6topbox .container {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  margin: 140px 130px 0 130px;
+}
+.section6bottombox {
+  height: 26vh;
+  padding: 50px 25%;
+}
+#section6 .lefttext {
+  float: left;
+  width: 34%;
+}
+#section6 .righttext {
+  float: left;
+  width: 60%;
+  margin-top: 10px;
+}
 /* Section 7 - Interior */
-
+#section7 {
+  width: 100%;
+  min-height: 100vh;
+}
+.section7topbox {
+  height: 74vh;
+  position: relative;
+  background: url(../img/section5.jfif) no-repeat center center/cover;
+}
+.section7topbox .container {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  margin: 140px 130px 0 130px;
+}
+.section7bottombox {
+  height: 26vh;
+  padding: 50px 25%;
+}
+#section7 .lefttext {
+  float: left;
+  width: 34%;
+}
+#section7 .righttext {
+  float: left;
+  width: 60%;
+  margin-top: 10px;
+}
 /* Section 8 - Specs */
 
 /* Section 9 - Order */ ;
