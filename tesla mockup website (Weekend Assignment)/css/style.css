@@ -42,6 +42,46 @@
   background-color: #171a20;
   color: #fff;
 }
+.btn-spec {
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  width: 210px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px 40px;
+  border: 3px solid #393c41;
+  color: #555;
+}
+.btn-spec-active {
+  display: inline-block;
+  text-align: center;
+  width: 210px;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px 40px;
+  border: 3px solid #d0d1d2;
+  color: #555;
+}
+.btn-compare {
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  width: 210px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px 40px;
+  border: 3px solid #393c41;
+  background-color: #393c41;
+  color: #f5f5f5;
+}
 .btn-plus {
   text-decoration: none;
   display: inline-block;
@@ -73,6 +113,13 @@
   width: 70px;
   border-top: 1px solid #171a20;
   margin: 30px 0;
+}
+.hr-small {
+  display: inline-block;
+  width: 30px;
+  border-top: 1px solid #f4f4f4;
+  margin-top: 30px;
+  margin-bottom: 5px;
 }
 .container {
   display: block;
@@ -353,13 +400,24 @@ nav {
 .section7topbox {
   height: 74vh;
   position: relative;
-  background: url(../img/section5.jfif) no-repeat center center/cover;
+  background: url(../img/section7.jfif) no-repeat center center/cover;
 }
 .section7topbox .container {
   position: absolute;
   top: 0;
+  right: 0;
   z-index: 3;
-  margin: 140px 130px 0 130px;
+  margin: 140px 100px 0 130px;
+}
+.section7topbox .feature-box-vl {
+  color: #fff;
+}
+.section7topbox .feature-box-vl p {
+  font-size: 12px;
+  margin-top: 13px;
+}
+.section7topbox .hr {
+  border-top: 1px solid #fff;
 }
 .section7bottombox {
   height: 26vh;
@@ -375,5 +433,46 @@ nav {
   margin-top: 10px;
 }
 /* Section 8 - Specs */
+#section8 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  position: relative;
+}
+.section8leftside {
+  float: left;
+  width: 50%;
+  height: 100vh;
+  background: url(../img/section8.png) no-repeat center center/contain;
+}
+.section8rightside {
+  padding: 30px 40px;
+  float: left;
+  width: 30%;
+  height: 100vh;
+}
+.section8rightside h3 {
+  color: #fff;
+}
+.section8rightside h3 span {
+  font-weight: 300;
+}
+.section8rightside a {
+  margin: 0 10px 10px 0;
+}
+.section8rightside h5,
+.section8rightside .tinytext {
+  font-size: 14px;
+}
+.section8rightside .lefttext,
+.section8rightside .righttext {
+  width: 48%;
+  color: #f4f4f4;
+  float: left;
+}
+.section8rightside .btn-plus {
+  color: #fff;
+  font-size: 15px;
+}
 
 /* Section 9 - Order */ ;
