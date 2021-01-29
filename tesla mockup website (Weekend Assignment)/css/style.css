@@ -145,7 +145,6 @@ nav {
 
 /* Section 1 - Model 3 */
 #section1 {
-  background-color: royalblue;
   min-height: 100vh;
   background: url(../img/section1.jpg) no-repeat center center/cover;
   padding-top: 75px;
@@ -159,12 +158,12 @@ nav {
 /* Section 2 - Safety */
 #section2 {
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
 }
 .section2leftbox {
   float: left;
   width: 22%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #fff;
   padding: 30px 50px;
 }
@@ -174,7 +173,7 @@ nav {
 .section2rightbox {
   float: left;
   width: 78%;
-  min-height: 100vh;
+  height: 100vh;
   background: url(../img/section2.png) no-repeat center center/cover;
 }
 .rating-box {
@@ -212,6 +211,25 @@ nav {
   text-align: center;
 }
 /* Section 3 - Performance */
+#section3 {
+  width: 100%;
+  min-height: 100vh;
+}
+.section3topbox {
+  height: 74vh;
+  min-width: 100vw;
+  background: url(../img/section3.jfif) no-repeat center center/cover;
+}
+.section3topbox .feature-box {
+  text-align: left;
+}
+.section3topbox .container {
+  padding-top: 30%;
+}
+.section3bottombox {
+  height: 26vh;
+  min-width: 100vw;
+}
 
 /* Section 4 - All Wheel Drive */
 
