@@ -123,6 +123,19 @@
   background-color: #fff;
   color: #686a6e;
 }
+.btn-up {
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  z-index: 996;
+}
+.btn-up a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px 4px #000;
+  margin-right: 30px;
+  font-size: 30px;
+}
 .feature-box {
   color: #fff;
   text-align: center;
@@ -253,6 +266,7 @@ nav {
   height: 100vh;
   width: 17%;
   padding: 30px 30px;
+  z-index: 997;
 }
 #sidenav:target {
   display: initial;
@@ -287,8 +301,8 @@ nav {
   position: fixed;
   top: 40%;
   left: 0;
-  width: 15%;
-  padding-left: 20px;
+  width: 13%;
+  padding-left: 15px;
   z-index: 998;
 }
 #leftnav ol {
@@ -298,10 +312,9 @@ nav {
 }
 #leftnav ol li {
   display: block;
-  margin-right: 20px;
   font-weight: 300;
+  width: 73%;
   margin-bottom: 10px;
-  padding-right: 20px;
 }
 #leftnav ol li a {
   text-decoration: none;
