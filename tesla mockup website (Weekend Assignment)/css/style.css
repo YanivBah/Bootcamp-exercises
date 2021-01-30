@@ -14,6 +14,12 @@
 }
 
 /* Components */
+.logo {
+  margin: 15px 0 0 25px;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
 .btn-white {
   text-transform: uppercase;
   text-decoration: none;
@@ -92,6 +98,31 @@
 .btn-plus:hover {
   color: #a1a1a1;
 }
+.btn-white2 {
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px 50px;
+  border: 3px solid #fff;
+  background-color: #fff;
+  color: #686a6e;
+  font-size: 12px;
+  display: inline-block;
+}
+.btn-compare2 {
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px 60px;
+  border: 3px solid #fff;
+  color: #fff;
+  font-size: 12px;
+  display: inline-block;
+}
+.btn-compare2:hover {
+  background-color: #fff;
+  color: #686a6e;
+}
 .feature-box {
   color: #fff;
   text-align: center;
@@ -102,6 +133,12 @@
   height: 70px;
   border-left: 1px solid #fff;
   margin: 0 30px -10px 30px;
+}
+.vl-leftnav {
+  display: inline;
+  height: 30px;
+  border-left: 2px solid #fff;
+  margin-right: 10px;
 }
 .feature-box-vl {
   color: #171a20;
@@ -120,6 +157,12 @@
   border-top: 1px solid #f4f4f4;
   margin-top: 30px;
   margin-bottom: 5px;
+}
+.hr-large {
+  display: inline-block;
+  width: 200px;
+  border-top: 1px solid #d0d1d2;
+  margin: 10px 0;
 }
 .container {
   display: block;
@@ -200,6 +243,84 @@ nav {
   top: 0;
   right: 0;
 }
+/* Right Side Nav */
+#sidenav {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  height: 100vh;
+  width: 17%;
+  padding: 30px 30px;
+}
+#sidenav:target {
+  display: initial;
+}
+#sidenav .closesidenav {
+  text-align: right;
+  font-size: 25px;
+}
+#sidenav .closesidenav a {
+  color: #191919;
+}
+
+#sidenav ol {
+  list-style: none;
+  margin: 0;
+  padding-top: 15px;
+}
+#sidenav ol li {
+  display: block;
+  margin-right: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#sidenav ol li a {
+  text-decoration: none;
+  color: #191919;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+/* Left Side Nav */
+#leftnav {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  width: 15%;
+  padding-left: 20px;
+  z-index: 998;
+}
+#leftnav ol {
+  list-style: none;
+  margin: 0;
+  padding-top: 15px;
+}
+#leftnav ol li {
+  display: block;
+  margin-right: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+#leftnav ol li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  visibility: hidden;
+  text-shadow: 2px 2px 3px black;
+}
+#leftnav ol li:hover a {
+  visibility: visible;
+}
+#leftnav .vl-leftnav {
+  visibility: visible;
+  box-shadow: 1px 1px 3px black;
+}
+#leftnav ol li a:active .vl-leftnav {
+  border-left: 4px solid #fff;
+}
 
 /* Section 1 - Model 3 */
 #section1 {
@@ -215,6 +336,7 @@ nav {
 }
 /* Section 2 - Safety */
 #section2 {
+  position: relative;
   width: 100%;
   min-height: 100vh;
 }
@@ -223,7 +345,7 @@ nav {
   width: 22%;
   height: 100vh;
   background-color: #fff;
-  padding: 30px 50px;
+  padding: 50px 50px 30px 50px;
 }
 .section2leftbox .paragraph {
   line-height: 1.7;
@@ -270,6 +392,7 @@ nav {
 }
 /* Section 3 - Performance */
 #section3 {
+  position: relative;
   width: 100%;
   min-height: 100vh;
 }
@@ -298,6 +421,7 @@ nav {
 
 /* Section 4 - All Wheel Drive */
 #section4 {
+  position: relative;
   width: 100%;
   min-height: 100vh;
 }
@@ -328,6 +452,7 @@ nav {
 }
 /* Section 5 - Range */
 #section5 {
+  position: relative;
   width: 100%;
   min-height: 100vh;
 }
@@ -336,6 +461,10 @@ nav {
   width: 78%;
   height: 100vh;
   background: url(../img/section5.jfif) no-repeat center center/cover;
+}
+.section5leftbox .feature-box {
+  margin-top: 54%;
+  text-align: left;
 }
 .section5rightbox {
   background-color: #fff;
@@ -353,6 +482,7 @@ nav {
 
 /* Section 6 - Autopilot */
 #section6 {
+  position: relative;
   width: 100%;
   min-height: 100vh;
 }
@@ -394,6 +524,7 @@ nav {
 }
 /* Section 7 - Interior */
 #section7 {
+  position: relative;
   width: 100%;
   min-height: 100vh;
 }
@@ -475,4 +606,55 @@ nav {
   font-size: 15px;
 }
 
-/* Section 9 - Order */ ;
+/* Section 9 - Order */
+#section9 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+}
+.section9top {
+  height: 10vh;
+  width: 100%;
+}
+.section9bottom {
+  height: 90vh;
+  width: 100%;
+}
+.section9bottom .rightbox {
+  width: 60%;
+  height: 100%;
+  float: right;
+  background: url(../img/section9.png) no-repeat left/contain;
+}
+.section9bottom .leftbox {
+  float: left;
+  width: 40%;
+  height: 100%;
+  padding: 420px 0 0 300px;
+}
+.section9bottom .leftbox h3 {
+  color: #fff;
+}
+
+/* Footer */
+#footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 25px;
+  background-color: #000;
+}
+#footer ol {
+  list-style: none;
+  margin: 0;
+}
+#footer ol li {
+  display: inline;
+  margin-right: 20px;
+}
+#footer ol li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
