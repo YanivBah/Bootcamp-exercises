@@ -15,7 +15,6 @@ body {
   background-color: #ebcb8b;
   overflow: visible;
 }
-
 .box::before {
   content: "";
   position: absolute;
