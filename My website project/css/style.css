@@ -29,6 +29,7 @@ body {
   font-family: "Cairo", sans-serif;
   font-size: var(--font-size);
   color: var(--dark-color);
+  background: var(--light-color2);
 }
 
 a {
@@ -40,6 +41,10 @@ a {
 ul,
 ol {
   list-style: none;
+}
+
+img {
+  /* width: 100%; */
 }
 
 /* Top navbar */
@@ -147,4 +152,43 @@ ol {
 }
 .hero__text .btn {
   margin-top: 10rem;
+}
+
+/* Categories Section */
+#categories {
+  height: 60rem;
+  padding: 3rem 0;
+}
+
+#categories .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories__box {
+  width: 42rem;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+.categories__box img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.categories__box--text {
+  margin: 5rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.categories__box--text h3 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.categories__box:hover img {
+  transform: scale(1.05);
 }
