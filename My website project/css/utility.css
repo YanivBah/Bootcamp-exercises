@@ -1,0 +1,28 @@
+.flex {
+  display: flex;
+}
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.btn {
+  display: inline-block;
+  color: var(--dark-color);
+  padding: 1rem 2rem;
+  background: var(--light-color2);
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+.btn:active {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.35);
+  transform: translateY(1.5px);
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color2);
+  transition: color, background-color 0.4s;
+}
