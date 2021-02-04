@@ -4,7 +4,7 @@
   --font-size: 1.6rem;
 
   /* Colors */
-  --primary-color: #28a062;
+  --primary-color: #15a66d;
   --light-color: #e5e9f0;
   --light-color2: #d8dee9;
   --dark-color: #3b4252;
@@ -113,7 +113,6 @@ img {
 #navbar li a:hover {
   color: var(--primary-color);
 }
-
 /* Hero */
 #hero {
   height: 80vh;
@@ -121,7 +120,6 @@ img {
   width: 100%;
   position: relative;
 }
-
 #hero::before {
   content: "";
   position: absolute;
@@ -132,14 +130,12 @@ img {
   z-index: -1;
   background: url(../img/hero.jpg) no-repeat top center/cover;
 }
-
 .hero__text {
   display: inline-block;
   color: var(--light-color);
   padding: 20rem 0 0 5rem;
   text-align: center;
 }
-
 .hero__text h2 {
   font-size: 5rem;
   font-weight: 300;
@@ -153,18 +149,14 @@ img {
 .hero__text .btn {
   margin-top: 10rem;
 }
-
 /* Categories Section */
 #categories {
-  height: 60rem;
-  padding: 3rem 0;
+  padding: 6rem 0;
 }
-
 #categories .container {
   display: flex;
   justify-content: space-between;
 }
-
 .categories__box {
   width: 42rem;
   border: 1px solid rgba(128, 128, 128, 0.3);
@@ -175,20 +167,64 @@ img {
   display: block;
   object-fit: cover;
   width: 100%;
+  transform: scale(1.1);
+  transition: transform 1s;
 }
-
 .categories__box--text {
-  margin: 5rem;
+  padding: 1.8rem;
   text-align: center;
   position: absolute;
-  top: 0;
+  transition: color 0.8s;
+  bottom: 0;
+}
+.categories__box:nth-child(1) .categories__box--text {
   right: 0;
 }
+.categories__box:nth-child(2) .categories__box--text,
+.categories__box:nth-child(3) .categories__box--text {
+  left: 0;
+}
 .categories__box--text h3 {
-  font-size: 3rem;
+  font-size: 2.3rem;
   font-weight: 300;
 }
-
 .categories__box:hover img {
   transform: scale(1.05);
+}
+.categories__box:hover .categories__box--text {
+  color: var(--primary-color);
+}
+
+/* Sale Section */
+#sale {
+  height: 70vh;
+  padding: 10rem 0;
+  position: relative;
+  background-color: rgba(46, 52, 64, 0.55);
+}
+#sale::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url(../img/hero2.jpg) no-repeat top 40% center/cover;
+}
+.sale__text {
+  text-transform: uppercase;
+  text-align: center;
+  transform: rotate(10deg);
+}
+
+.sale__text h3,
+.sale__text p {
+  display: inline-block;
+  font-size: 5rem;
+  margin: 1rem;
+  padding: 1rem;
+  color: var(--light-color);
+  background-color: rgba(216, 222, 233, 0.35);
+  text-shadow: 1px 1px 2px black;
 }
