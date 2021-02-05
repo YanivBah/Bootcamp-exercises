@@ -230,26 +230,123 @@ img {
 }
 
 .sale__product-box {
-  border-radius: 40px 0 40px 0;
-  width: 20rem;
+  width: 18rem;
+  padding: 3px;
   text-align: center;
-  padding-bottom: 1rem;
-  background-color: rgba(216, 222, 233, 0.65);
-  border: 2px solid rgba(216, 222, 233, 0.65);
+  background-color: rgba(216, 222, 233, 0.8);
+  border: 1px solid rgba(216, 222, 233, 0.65);
   overflow: hidden;
-  transition: transform 0.3s;
+  transition: transform 0.4s;
+  margin: 2rem;
+}
+
+.sale__product-box h4 {
+  margin: 3px 0;
+  border: 1px solid var(--dark-color);
+  border-radius: 10px;
+  padding: 3px 10px;
+  display: inline-block;
+  background: var(--light-color2);
 }
 
 .sale__product-box:hover {
   transform: translateY(-2rem) scale(1.15);
 }
 
-/* .sale__product-box img {
+.sale__product-box img {
   width: 100%;
-} */
+  height: 210px;
+  object-fit: cover;
+  border-radius: 0 0 15px 15px;
+}
 
 #sale .container:nth-child(2) {
   margin-top: 10rem;
   display: flex;
+  justify-content: center;
+}
+
+/* Newest Section */
+#newest-products {
+  min-height: 100vh;
+  padding: 6rem 0 0;
+}
+
+#newest-products .container {
+  width: 100%;
+}
+
+#newest-products .flex {
   justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5rem;
+}
+
+#newest-products .flex li {
+  display: inline-block;
+  margin: 1.5rem;
+}
+#newest-products .flex h3 {
+  position: relative;
+  font-size: 3rem;
+}
+#newest-products .flex h3::after {
+  content: "";
+  width: 20.5rem;
+  height: 3px;
+  position: absolute;
+  background-color: var(--primary-color);
+  bottom: -0.5rem;
+  left: 0;
+}
+#newest-products .flex li:first-child {
+  position: relative;
+}
+#newest-products .flex li:first-child::after {
+  content: "";
+  width: 2.5rem;
+  height: 1px;
+  position: absolute;
+  background-color: var(--primary-color);
+  left: -2px;
+  bottom: -0.5rem;
+}
+
+.product-card {
+  width: 300px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+.product-card:hover {
+  transform: scale(0.9);
+}
+.product-card img {
+  width: 100%;
+  height: 32rem;
+  object-fit: cover;
+  position: relative;
+}
+.product-card h5 {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 0.7rem 0;
+}
+.product-card i {
+  display: inline-block;
+  color: #fd7e14;
+}
+.product-card p:last-child {
+  font-size: 2.2rem;
+  margin: 0.7rem 0;
+}
+
+#newest-products .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
 }
