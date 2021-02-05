@@ -218,6 +218,7 @@
   align-items: center;
   overflow: hidden;
   transition: transform 0.5s;
+  text-align: center;
 }
 .product-card:hover {
   transform: scale(0.9);
@@ -248,14 +249,19 @@
 
 /* Coupon Section */
 #coupon {
-  padding: 5rem;
+  padding: 5rem 0 5rem 0;
+  text-align: center;
 }
 #coupon .container {
+  display: inline-block;
   border: 1px solid var(--dark-color);
   height: 100%;
-  min-width: 60%;
   position: relative;
   padding: 6rem;
+  margin: 2rem;
+}
+#coupon .container p {
+  text-align: left;
 }
 #coupon .container::before {
   background: url(../img/coupon.jpg) no-repeat bottom 50% center/cover;
@@ -263,4 +269,26 @@
 #coupon .container .btn {
   text-align: center;
   margin-top: 3rem;
+}
+
+/* Footer */
+#footer {
+  /* height: 10vh; */
+  padding: 2rem 0;
+}
+
+#footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#footer form .input {
+  width: 60%;
+}
+
+#footer .social {
+  margin: 0 1rem;
+}
+#footer .social:hover i {
+  color: var(--primary-color);
 }
