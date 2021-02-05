@@ -26,3 +26,54 @@
   color: var(--light-color2);
   transition: color, background-color 0.4s;
 }
+
+/* Typography */
+.xs-text {
+  font-size: 1.2rem;
+}
+.s-text {
+  font-size: 1.5rem;
+}
+.m-text {
+  font-size: 2.2rem;
+}
+.l-text {
+  font-size: 3rem;
+}
+.xl-text {
+  font-size: 5rem;
+}
+
+.light-color-text {
+  color: var(--light-color);
+}
+.primary-color-text {
+  color: var(--primary-color);
+}
+
+/* Before Background */
+#coupon .container::before,
+#sale::before,
+#hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Background */
+.light-bg {
+  background-color: var(--light-color2);
+}
+.dark-bg {
+  background: var(--darkest-color);
+}
+.dark-bg-transparent {
+  background: rgba(46, 52, 64, 0.55);
+}
+.light-bg-transparent {
+  background: rgba(255, 255, 255, 0.5);
+}
