@@ -166,6 +166,7 @@
   margin-top: 10rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Newest Section */
@@ -245,6 +246,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
+  justify-items: center;
+  justify-content: space-between;
 }
 
 /* Coupon Section */
