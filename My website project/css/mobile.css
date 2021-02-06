@@ -111,10 +111,31 @@
   .hero__text .btn {
     margin-top: 13rem;
   }
+  #sale .container:nth-child(2) {
+    margin-top: 3rem;
+  }
+  .sale__product-box {
+    width: 14rem;
+  }
+  .sale__product-box img {
+    height: 120px;
+  }
+  #aside {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 440px) {
   .container {
     padding: 0;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .hero__text {
+    padding: 5rem 0 0 0;
+  }
+  .hero__text .btn {
+    margin-top: 5rem;
   }
 }
